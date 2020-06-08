@@ -1,7 +1,7 @@
 <!doctype html>
 <html lang="en-US">
 <link rel="stylesheet" href="./index.css">
-<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+<script src="./index.js"></script>
   
 <head>
     <meta charset="utf-8">
@@ -17,14 +17,14 @@
 <div class="navbar">
   <img class = 'icon' src='images/bromley-solutions.png'/>
   <a class = 'name'>Bromley Solutions</a>
-  <a class = 'column'>Home</a>
+  <a onclick="backHome()" class = 'column'>Home</a>
   <a class = 'column' href="https://www.interactive-physics.org/">Physics Website</a>
-  <div class="dropdown" class = 'row'>
+  <div class="dropdown">
       <a onclick="myFunction()" class="dropbtn">Dropdown</a>
       <div id="myDropdown" class="dropdown-content">
-        <p onclick='myhardware()' class = 'list'>Hardware</p>
-        <p id="myweb" class = 'list' id= 'web'>Web Services</p>
-        <p class = 'list'>Software</p>
+        <p onclick='myhardware(true)' >Hardware</p>
+        <p onclick='myWebware(true)' >Web Services</p>
+        <p onclick='mySoftware(true)' >Software</p>
       </div> <!--end of navbar list less the search form-->
 
       <form class='form'>
@@ -35,7 +35,7 @@
   </div> <!--end of dropdown-->
 </div> <!--end of navbar-->
 
-  <div id='first'></div>
+  <div id='first'><script>home();</script></div>
 
               <div id="hardware" class='album'>
                 <div class='gallery'>
@@ -53,51 +53,23 @@
                     <div class='desc'>This is a wider card with supporting text below as a natural lead-in to additional content.</div>
                       <small class='priceRange'>$300.00 ... $3500.00</small>
                   </div>
-              </div>  
-             
-           
+                  <div class='gallery'>
+                    <img src='../images/cashRegister.PNG'>
+                    <div class='desc'>Hardware racks on wheels in various sizes.</div>
+                     <small class='priceRange'>$300.00 ... $3500.00</small>
+                   </div>
+                   <div class='gallery'>
+                   <img src='../images/cashdrawer.PNG'>
+                     <div class='desc'>Powerful rack mounted server running simple to use point and click based operating systems.</div>
+                       <small class='priceRange'>$600.00 ... $5500.00</small>
+                   </div>
+                   <div class='gallery'>
+                     <img src='../images/cabinet.png'>
+                       <div class='desc'>This is a wider card with supporting text below as a natural lead-in to additional content.</div>
+                         <small class='priceRange'>$300.00 ... $3500.00</small>
+                     </div>
+                </div>
+                    
   </body>
 </html>
 
-<script>
-  var state = 0;
-  var flip = false;
-  opening(0);
-
-function myhardware() {
-  document.getElementById("hardware").classList.toggle("albumOn");
-  document.getElementById("myDropdown").classList.toggle("showOff");
-  opening(1);
-  flip = false;
-}
-  
-function myFunction() {
-  if (flip) {
-    document.getElementById("myDropdown").classList.toggle("showOff");
-    flip = false;
-  }
-  else {
-    document.getElementById("myDropdown").classList.toggle("show");
-    flip = true;
-  }
-}
-function opening (state) {
-switch(state) {
-    case 0:
-        document.getElementById("first").innerHTML = "<p class= 'opening'>We're in <b>Las Vegas</b> and we're ready to meet your computational needs."
-          + " The owner is a UNLV Computer Science graduate that has been in engineering working with industrial controls and applications for years."
-          + " Bromley Solutions has it's own on site servers ready to meet your web based needs.</p></br><h2 class='openingList'> Servers can do more than just websites </h2></br>"
-          + "<li class='openingList'> Database access</li> <li class='openingList'>Remote login and software access monitoring</li> <li class='openingList'>report generation"
-          + " and access</li>"
-        break;
-    case 1:
-        document.getElementById("first").innerHTML = "<p class='opening'>Emagine plugging in a component and it instantly integrates itself into " 
-        + "your business option. Purchase cash register, plug it in, and it has your menu. It "
-        + "instantly passes orders to the kitchen.  The kitchen touch screen displays inwork orders, "
-        + "time of request, special orders. The server system can make changes to the menu, pricing, cost, "
-        + "and the integrated multi-zone system adjusts all effected sub-assemblies. These items are at site installed and constructed.</p>"
-        break;
-  }
-}
-
-</script>

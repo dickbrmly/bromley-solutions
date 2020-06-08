@@ -51,17 +51,12 @@
   margin-right: 2vw;
 }
 
-.row {
-  color:wheat;
-  margin: 0%;
-  font-size: 1vw;
-}
-
 .column {
   text-decoration: none;
   color:wheat;
   margin-left: 4vw;
   font-size: 1vw;
+  cursor:pointer;
 }
 
 .form {
@@ -80,6 +75,7 @@
 div.gallery {
   background-color: wheat;
   margin-left: 5%;
+  margin-bottom: 5%;
   border: 10px double black;
   float: left;
   width: 25vw;
@@ -105,7 +101,6 @@ div.desc {
 
 /* Dropdown Button */
 .dropbtn {
-  display: inline;
   min-width: 7vw;
   color: wheat;
   font-size: 1vw;
@@ -115,20 +110,18 @@ div.desc {
 
 /* Dropdown button on hover & focus */
 /* The container <div> - needed to position the dropdown content */
+
 .dropdown {
   margin-left: 4vw;
   position: relative;
   display: inline;
 }
-
-.list {
-  color: white;
-}
 /* Dropdown Content (Hidden by Default) */
 .dropdown-content {
-  top: 2vw;
+  position: absolute;
+  left:0;
   background-color: black;
-  width: 7%;
+  
   font-size: 1vw;
   display: none;
 }
@@ -136,15 +129,13 @@ div.desc {
 /* Links inside the dropdown */
 .dropdown-content p {
   color: wheat;
-  display: block;
 }
 
 /* Change color of dropdown links on hover */
 
 /* Show the dropdown menu (use JS to add this class to the .dropdown-content container when the user clicks on the dropdown button) */
 .show {
-  display:block;
-  color: aliceblue;
+  display:list-item;
 }
 
 .showOff {
@@ -156,7 +147,12 @@ div.desc {
   color: white;
   text-align: center;
   padding: 5px;
-  text-decoration: none;}
+  text-decoration: none;
+}
+
+.albumOff {
+  display:none;
+}
 
 .dropdown-content p:hover 
 {
