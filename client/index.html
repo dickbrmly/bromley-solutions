@@ -1,75 +1,44 @@
-<!doctype html>
-<html lang="en-US">
+﻿<!doctype html>
 <link rel="stylesheet" href="./index.css">
 <script src="./index.js"></script>
-  
+<html lang="en-US">
+
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=yes">
     <meta name="description" content="About hardware, software, webhosting, database creation">
     <meta name="author" content="Richard Bromley">
-    <meta name="generator" content="Jekyll v4.0.1">
     <title>Bromley Solutions</title>
 </head>
 
-  <body ng-app="my App">
+<body ng-app="my App" onload=opening(0)>
 
-<div class="navbar">
-  <img class = 'icon' src='images/bromley-solutions.png'/>
-  <a class = 'name'>Bromley Solutions</a>
-  <a onclick="backHome()" class = 'column'>Home</a>
-  <a class = 'column' href="https://www.interactive-physics.org/">Physics Website</a>
-  <div class="dropdown">
-      <a onclick="myFunction()" class="dropbtn">Dropdown</a>
-      <div id="myDropdown" class="dropdown-content">
-        <p onclick='myhardware(true)' >Hardware</p>
-        <p onclick='myWebware(true)' >Web Services</p>
-        <p onclick='mySoftware(true)' >Software</p>
-      </div> <!--end of navbar list less the search form-->
+    <div class="navbar">
+        <img class='icon' src='images/bromley-solutions.png' />
+        <a class='name'>Bromley Solutions</a>
+        <a onclick=opening(0) class='column' id='home'>Home</a>
+        <a class='column' href="https://www.interactive-physics.org/">Physics Website</a>
 
-      <form class='form'>
-        <form action="http://google.com/search" target="_blank">
-          <input name="q">
-          <input type="submit">
-      </form> <!--end of form-->
-  </div> <!--end of dropdown-->
-</div> <!--end of navbar-->
 
-  <div id='first'><script>home();</script></div>
+        <select id="dropdown" class='dropdown' onchange="doIt()">
+                <option>Drop Down</option>
+                <option>Hardware</option>
+                <option>Web Services</option>
+                <option>Software</option>
+        </select>
+    </div>
+    <!--end of navbar-->
 
-              <div id="hardware" class='album'>
-                <div class='gallery'>
-                 <img src='../images/WheeledCabinet.PNG'>
-                 <div class='desc'>Hardware racks on wheels in various sizes.</div>
-                  <small class='priceRange'>$300.00 ... $3500.00</small>
-                </div>
-                <div class='gallery'>
-                <img src='../images/computer.PNG'>
-                  <div class='desc'>Powerful rack mounted server running simple to use point and click based operating systems.</div>
-                    <small class='priceRange'>$600.00 ... $5500.00</small>
-                </div>
-                <div class='gallery'>
-                  <img src='../images/monitor.PNG'>
-                    <div class='desc'>This is a wider card with supporting text below as a natural lead-in to additional content.</div>
-                      <small class='priceRange'>$300.00 ... $3500.00</small>
-                  </div>
-                  <div class='gallery'>
-                    <img src='../images/cashRegister.PNG'>
-                    <div class='desc'>Hardware racks on wheels in various sizes.</div>
-                     <small class='priceRange'>$300.00 ... $3500.00</small>
-                   </div>
-                   <div class='gallery'>
-                   <img src='../images/cashdrawer.PNG'>
-                     <div class='desc'>Powerful rack mounted server running simple to use point and click based operating systems.</div>
-                       <small class='priceRange'>$600.00 ... $5500.00</small>
-                   </div>
-                   <div class='gallery'>
-                     <img src='../images/cabinet.png'>
-                       <div class='desc'>This is a wider card with supporting text below as a natural lead-in to additional content.</div>
-                         <small class='priceRange'>$300.00 ... $3500.00</small>
-                     </div>
-                </div>
-                    
-  </body>
+    <div id='first'></div>
+
+    <div id="hardware" class='album'></div>
+    <script>
+        function doIt() {
+            var dd = document.getElementById('dropdown');
+            var entry = dd.selectedIndex;
+            opening(entry);
+        }
+    </script>
+</body>
+
 </html>
-

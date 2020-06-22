@@ -1,161 +1,165 @@
 .navbar {
-  white-space: nowrap;
-  color: #FFFFFFFF;
-  height: 2.5vw;
-  width: 100%;
-  background-color: #000000FF;
-  background-attachment: fixed;
-  padding-top: 0.2vw;
-  opacity: .7;
+    white-space: nowrap;
+    color: #FFFFFFFF;
+    height: 2.5vw;
+    width: 100%;
+    background-color: #000000FF;
+    background-attachment: fixed;
+    padding-top: 0.2vw;
+    opacity: .7;
 }
 
 .opening {
-  font: 1vw Georgia;
-  color:brown;
-  margin-left: 20vw;
-  margin-right: 20vw;
-  margin-bottom: 2vw;
-  background-attachment: fixed;
-  padding-top: 0.2vw;
-  opacity: .7;
+    font: 1vw Georgia;
+    color: brown;
+    margin-left: 20vw;
+    margin-right: 20vw;
+    margin-bottom: 2vw;
+    background-attachment: fixed;
+    padding-top: 0.2vw;
+    opacity: .7;
 }
 
 .openingList {
-  margin-top: 0;
-  font: 1vw Georgia;
-  color:brown;
-  margin-left: 30vw;
-  margin-right: 20vw;
-  background-attachment: fixed;
-  padding-top: 0.2vw;
-  opacity: .7;
+    margin-top: 0;
+    font: 1vw Georgia;
+    color: brown;
+    margin-left: 30vw;
+    margin-right: 20vw;
+    background-attachment: fixed;
+    padding-top: 0.2vw;
+    opacity: .7;
 }
 
 .icon {
-  vertical-align: center;
-  margin-left: 0;
-  width: 1.5vw;
-  height: 1.5vw;
+    vertical-align: center;
+    margin-left: 0;
+    width: 1.5vw;
+    height: 1.5vw;
 }
 
 .search {
-  color: wheat;
-  font-size: 1vw;
+    color: wheat;
+    font-size: 1vw;
 }
 
 .name {
-  vertical-align: 0.15vw;
-  display: inline-flex;
-  font-family: Georgia, seri;
-  font-size: 2vw;
-  margin-right: 2vw;
+    vertical-align: 0.15vw;
+    display: inline-flex;
+    font-family: Georgia, seri;
+    font-size: 2vw;
+    margin-right: 2vw;
 }
 
 .column {
-  text-decoration: none;
-  color:wheat;
-  margin-left: 4vw;
-  font-size: 1vw;
-  cursor:pointer;
+    text-decoration: none;
+    color: wheat;
+    margin-left: 4vw;
+    font-size: 1vw;
+    cursor: pointer;
 }
 
 .form {
-  position: absolute;
-  text-decoration: none;
-  left: 45vw;
-  top: 0vw;
-  color:wheat;
-  font-size: 1vw;
-}
-
-.album {
-  display: none;
+    position: absolute;
+    text-decoration: none;
+    left: 45vw;
+    top: 0vw;
+    color: wheat;
+    font-size: 1vw;
 }
 
 div.gallery {
-  background-color: wheat;
-  margin-left: 5%;
-  margin-bottom: 5%;
-  border: 10px double black;
-  float: left;
-  width: 25vw;
-  height: 15vw;
+    background-color: wheat;
+    margin-left: 5%;
+    margin-bottom: 5%;
+    border: 10px double black;
+    float: left;
+    width: 25vw;
+    height: 15vw;
 }
 
 .priceRange {
-  color: royalblue;
-  font-size: 0.7vw;
-  margin-left: 2vw;
+    color: royalblue;
+    font-size: 0.7vw;
+    margin-left: 2vw;
 }
 
 div.gallery img {
-  width: 40%;
-  height: auto;
+    width: 40%;
+    height: auto;
 }
 
 div.desc {
-  color: coral;
-  padding: 15px;
-  text-align: center;
+    color: coral;
+    padding: 15px;
+    text-align: center;
 }
+
 
 /* Dropdown Button */
+
 .dropbtn {
-  min-width: 7vw;
-  color: wheat;
-  font-size: 1vw;
-  border: none;
-  cursor:pointer;
+    min-width: 7vw;
+    color: wheat;
+    font-size: 1vw;
+    border: none;
+    cursor: pointer;
 }
 
+
 /* Dropdown button on hover & focus */
+
+
 /* The container <div> - needed to position the dropdown content */
 
 .dropdown {
-  margin-left: 4vw;
-  position: relative;
-  display: inline;
-}
-/* Dropdown Content (Hidden by Default) */
-.dropdown-content {
-  position: absolute;
-  left:0;
-  background-color: black;
-  
-  font-size: 1vw;
-  display: none;
+    margin-left: 4vw;
+    position: relative;
+    display: inline;
 }
 
-/* Links inside the dropdown */
-.dropdown-content p {
-  color: wheat;
+
+/* Dropdown Content (Hidden by Default) */
+
+.dropdown-content {
+    position: absolute;
+    left: 0;
+    background-color: black;
+    font-size: 1vw;
+    display: none;
 }
+
+
+/* Links inside the dropdown */
+
+.dropdown-content p {
+    color: wheat;
+}
+
+.dropdown-content:hover {
+    color: black;
+    background-color: lightblue;
+}
+
 
 /* Change color of dropdown links on hover */
 
+
 /* Show the dropdown menu (use JS to add this class to the .dropdown-content container when the user clicks on the dropdown button) */
+
 .show {
-  display:list-item;
+    display: list-item;
 }
 
 .showOff {
-  display:none;
+    display: none;
 }
 
-.albumOn {
-  display: inline;
-  color: white;
-  text-align: center;
-  padding: 5px;
-  text-decoration: none;
+.album {
+    display: inline;
 }
 
-.albumOff {
-  display:none;
-}
-
-.dropdown-content p:hover 
-{
-  cursor:pointer;
-  background-color: gray;
+.dropdown-content p:hover {
+    cursor: pointer;
+    background-color: gray;
 }
