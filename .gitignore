@@ -1,4 +1,5 @@
 server/node_modules/*.*
+server/node_modules/nodemailer/*.*
 server/node_modules/@azure/ms-rest-azure-env/LICENSE
 server/node_modules/@azure/ms-rest-js/LICENSE
 server/node_modules/@azure/ms-rest-nodeauth/LICENSE
