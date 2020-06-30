@@ -16,22 +16,24 @@
     <div class="navbar">
         <img class='icon' src='images/bromley-solutions.png' />
         <a class='name'>Bromley Solutions</a>
-        <a onclick=opening(0) class='column' id='home'>Home</a>
-        <a class='column' href="https://www.interactive-physics.org/">Physics Website</a>
 
+        <a onclick=opening(0) class='column' id='home'>Home</a>
+        <a onclick=newContact() class='column'>Contact</a>
 
         <select id="dropdown" class='dropdown' onchange="doIt()">
                 <option>Drop Down</option>
                 <option>Hardware</option>
                 <option>Web Services</option>
                 <option>Software</option>
+                <option>Physics Website</option>
         </select>
+
     </div>
     <!--end of navbar-->
 
-    <div id='first'></div>
-
+    <div id='first' class='first'></div>
     <div id="hardware" class='album'></div>
+    <div id='last' class='last'></div>
     <script>
         function doIt() {
             var dd = document.getElementById('dropdown');

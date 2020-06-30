@@ -26,22 +26,14 @@
         <h1 style="color:blue; margin-left:42%; font-size: 2.0vw;">Entry Form</h1>
         <form>
             <div>
-                <input type="hidden" name="form" value="newUser" />
-
-                <span><label for="uname" style="font-size: 2.0vw; color:blue"><b>Username</b></label></span>
-                <input type="text" style="width:35%; font-size: 2.0vw" placeholder="Enter Username" name="uname" required>
-                <label for="email" style="font-size: 2.0vw; margin-left: 4%; color:blue"><b>Email</b></label>
+                <input type='hidden' name='form' value='newEmail' />
+                <label for="email" style="font-size: 2.0vw; margin-left: 0%; color:blue"><b>Email</b></label>
                 <input type="text" style="width:43%; font-size: 2.0vw" placeholder="Enter Email" name="email" required>
 
-
-
                 <br /><label for="fname" style="margin-left:10%; font-size: 2.0vw; color:blue"><b>First Name</b></label>
-                <span><label for="mname" style="margin-left:20%; font-size: 2.0vw; color:blue"><b>Middle Name</b></label></span>
                 <span><label for="lname" style="margin-left:22%; font-size: 2.0vw; color:blue"><b>Last Name</b></label></span>
                 <br /><input type="text" style="width:28%; margin-right:6.0%; font-size: 2.0vw" placeholder="Enter first name" name="fname">
-                <span><input type="text" style="width:28%; margin-right:6.0%; font-size: 2.0vw" placeholder="Enter Middle name" name="mname"></span>
                 <span><input type="text" style="width:27.5%; font-size: 2.0vw" placeholder="Enter last name" name="lname"></span>
-
 
                 <br /><label for="street" style="margin-left:10%; font-size: 2.0vw; color:blue"><b>Street Address</b></label>
                 <span><label for="city" style="margin-left:20%; font-size: 2.0vw; color:blue"><b>City</b></label></span>
@@ -52,20 +44,15 @@
                 <span><input type="text" style="width:22%; font-size: 2.0vw" placeholder="Enter state" name="st"></span>
                 <span><input type="text" style="width:14%; font-size: 2.0vw" placeholder="Enter zipcode" name="zip"></span>
 
+                <span><label style="margin-left:0%; font-size: 2.0vw; color:blue"><b>Interests</b></label></span>
 
-
-                <span><label for="psw" style="margin-left:1%; font-size: 2.0vw; color:blue"><b>Password</b></label></span>
-
-                <input type="password" style="width:88.8%; font-size: 2.0vw;" placeholder="Enter password" name="psw" required>
-
-                <br /><button type="submit" style="width:100%; font-size: 2.0vw" name="newUser" value="newUser">Submit</button>
+                <textarea rows="5" cols="106" name="text" placeholder="Enter text"></textarea>
+                <br /><button type="submit" style="width:97%; font-size: 2.2vw">Submit</button>
             </div>
-            <button id='cancelCreate' class='container' style="width:100%; background-color:gray; color:yellow; font-size: 2.0vw; text-align:center">Cancel User Creation</button>
         </form>
+        <button id='cancelCreate' onclick='window.close()' class='container ' style="width:100%; background-color:gray; color:yellow; font-size: 2.0vw; text-align:center">Cancel User Creation</button>
+
     </div>
 </body>
 
 </html>
-<script>
-    document.getElementById("cancelCreate").addEventListener("click", closeWin);
-</script>
